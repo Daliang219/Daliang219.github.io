@@ -18,10 +18,10 @@
 				//location.href="myhtml.html"; //
 				//location.href="happy.html"; //
 			},2000);
-		} else if (userName != "六个汤圆" && userName !="王艺"&& userName != "Ohh"){
+		} else if (userName != "流星雨" && userName !="刘雨欣"&& userName != "Ohh"){
         alert("咋的了，自己的名字都忘记了嘛？");
   	  } else {
-		alert("不对不对，自己生日都忘了嘛？");
+		alert("不对不对，自己生日都忘了吗？（提示一下：密码是4个数字）");
 	}
 }); 
 
