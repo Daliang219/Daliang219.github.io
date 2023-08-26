@@ -3,7 +3,7 @@
 	var userName=document.getElementById("userName").value;
     var pwd=document.getElementById("pwd").value;
 	//修改密码请改此处
-	if(((userName=="六个汤圆" || userName=="王艺" || userName=="Ohh") &&  (pwd=="111" || pwd=="20010119" ))){
+	if(((userName=="流星雨" || userName=="刘雨欣" || userName=="Ohh") &&  (pwd=="0827" || pwd=="20000827" ))){
 			event.preventDefault();
 			$('form').fadeOut(500);
 		//	$('.page_one').fadeIn(500);
