@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+<title>生日快乐</title>
+
+</head>
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<style type="text/css">
+	.hide{ display: none !important; }
+	.clear_black{
+		background: black;
+	}
+</style>
+<body>
+
+
+
+<div class="page_1" >
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+<bokeh></bokeh>
+
+	<h1>Happy Birthday To You!</h1>
+	<h2>Happy Birthday To You!</h2>
+	<span>🎉</span>
+	<div class="candle">
+		<div id="flame" class="lit"></div>
+	</div>
+	<div class="cake"></div>
+	<div class="plate"></div>
+</div>
+
+<div class="page_2  hide" style="font-family:'Microsoft YaHei'">
+	<h3>祝王艺生日快乐！</h3>
+	<h3>天天开心，如花似叶，</h3>
+	<h3>岁岁年年，永沐春风。</h3>
+	
+</div>
+
+<audio id="bgmusic1" src="../music/2.mp3" autoplay="autoplay" loop="loop" style="display: block; width: 3%; height:3%;"></audio>
+<script type="text/javascript">
+/* 定时烟花 */
+window.onload=function(){
+
+	 setTimeout(function(){
+	fireworks(); 
+	},4500);
+
+}
+function fireworks() {
+	$('.page_1').addClass('hide');
+	$('.page_2').removeClass('hide');
+	$('.page_2').fireworks({ 
+	  sound: false, 
+	  opacity: 0.9, 
+	  width: '100%', 
+	  height: '100%' 
+	});	
+}
+/* BGM */	
+
+	function toggleSound() {
+			if(music_select == 1)	{var music = document.getElementById("bgmusic1");}//获取ID
+			else	{var music = document.getElementById("bgmusic2");}//获取ID
+			
+			var music = document.getElementById(music_select);
+				console.log(music);
+				console.log(music.paused);
+			if (music.paused) { //判读是否播放
+				music.paused=false;
+				music.play(); //没有就播放
+			}
+		}
+setInterval("toggleSound()",1);
+
+</script>
+
+<!-- <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="../music/2.mp3" style="position: relative;top: -40px;left: 50px;">
+</audio> -->
+<!--
+<embed src="../music/2.mp3" hidden="true" autostart="true" loop="true">
+-->
+<script src="../js/jquery.fireworks.js" type="text/javascript"></script>
+
+</body>
+</html>
